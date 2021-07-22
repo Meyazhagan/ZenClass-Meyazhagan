@@ -9,22 +9,28 @@ Statically typed programming:-
     A language is statically typed if the type of a variable is known at compile time.
     Types are static, meaning once you set a variable to a type, you cannot change it.
     Typing is associated with the variable rather than the value it refers to.
-    A programming language is said to use static typing when type checking is performed during compile-time as opposed to run-time.
-    Example of statically typed programming languages - C, C++, Java, C#, Fortran, Haskell, ML, Pascal, Perl.
+    A programming language is said to use static typing when type checking is performed during 
+compile-time as opposed to run-time.
+    Example of statically typed programming languages - C, C++, Java, C#, Fortran, Haskell, 
+ML, Pascal, Perl.
 
 Dynamically typed programming:-
-    A language is dynamically typed if the type is associated with run-time values, and not named variables/fields/etc.
+    A language is dynamically typed if the type is associated with run-time values, and not 
+named variables/fields/etc.
     Types are dynamic, meaning after you set a variable to a type, you CAN change it.
     Typing is associated with the value it assumes rather than the variable itself.
-    A programming language is said to be dynamically typed, or just 'dynamic', when the majority of its type checking is performed at run-time as opposed to at compile-time.
-    Example of dynamically typed programming languages - JavaScript, Lisp, Lua, Objective-C, Perl, PHP, Prolog, Python, Ruby, Smalltalk.
+    A programming language is said to be dynamically typed, or just 'dynamic', when the majority 
+of its type checking is performed at run-time as opposed to at compile-time.
+    Example of dynamically typed programming languages - JavaScript, Lisp, Lua, Objective-C, Perl, 
+PHP, Prolog, Python, Ruby, Smalltalk.
 
 Summary on programming language vs scripting language:-
 programming language:-
     Is compiled to machine code and run on the hardware of the underlying Operating System.
     A programming language targets the computing system, which can be a real or virtual machine. 
     The instructions are executed by the machine.
-    A programming language are processed once (think of a food processor) and reduced to a simpler form that allows it to run faster than a script that has to be reprocessed every time.
+    A programming language are processed once (think of a food processor) and reduced to a simpler 
+form that allows it to run faster than a script that has to be reprocessed every time.
     Example of programming languages - C, C++, Java, C#
 
 scripting language:-
@@ -40,25 +46,45 @@ codekata practice.
 Difference between HTTP1.1 vs HTTP2:-
 HTTP1.1 :-
     Key Feature:-
-        It supports connection reuse i.e. for every TCP connection there could be multiple requests and responses, and pipelining where the client can request several resources from the server at once. However, pipelining was hard to implement due to issues such as head-of-line blocking and was not a feasible solution.
+        It supports connection reuse i.e. for every TCP connection there could be multiple requests 
+    and responses, and pipelining where the client can request several resources from the server 
+    at once. However, pipelining was hard to implement due to issues such as head-of-line blocking 
+    and was not a feasible solution.
+
     Status Code:-
-        Introduces a warning header field to carry additional information about the status of a message. Can define 24 status codes, error reporting is quicker and more efficient.
+        Introduces a warning header field to carry additional information about the status of a 
+    message. Can define 24 status codes, error reporting is quicker and more efficient.
+
     Authentication Mechanism:-
         It is relatively secure since it uses digest authentication, NTLM authentication.
     Caching:-
-        Expands on the caching support by using additional headers like cache-control, conditional headers like If-Match and by using entity tags.
+        Expands on the caching support by using additional headers like cache-control, conditional 
+    headers like If-Match and by using entity tags.
+    
     Header Compression:-
-        Headers are sent on every request leading to a lot of duplicate data being sent uncompressed across the wire.
+        Headers are sent on every request leading to a lot of duplicate data being sent uncompressed 
+    across the wire.
 
    
 HTTP2 :-
     Key Feature:-
-        Uses multiplexing, where over a single TCP connection resources to be delivered are interleaved and arrive at the client almost at the same time. It is done using streams which can be prioritized, can have dependencies and individual flow control. It also provides a feature called server push that allows the server to send data that the client will need but has not yet requested.
+        Uses multiplexing, where over a single TCP connection resources to be delivered are 
+    interleaved and arrive at the client almost at the same time. It is done using streams which 
+    can be prioritized, can have dependencies and individual flow control. It also provides a 
+    feature called server push that allows the server to send data that the client will need but 
+    has not yet requested.
+    
     Status Code:-
         Underlying semantics of HTTP such as headers, status codes remains the same.
+
     Authentication Mechanism:-
-        Security concerns from previous versions will continue to be seen in HTTP/2. However, it is better equipped to deal with them due to new TLS features like connection error of type Inadequate_Security.
+        Security concerns from previous versions will continue to be seen in HTTP/2. 
+    However, it is better equipped to deal with them due to new TLS features like connection 
+    error of type Inadequate_Security.
+    
     Caching:-
-        HTTP/2 does not change much in terms of caching. With the server push feature if the client finds the resources are already present in the cache, it can cancel the pushed stream.
+        HTTP/2 does not change much in terms of caching. With the server push feature if the 
+    client finds the resources are already present in the cache, it can cancel the pushed stream.
+    
     Header Compression:-
         Header compression is included by default in HTTP/2 using HPACK.
