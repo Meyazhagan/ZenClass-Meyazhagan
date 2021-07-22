@@ -1,0 +1,5 @@
+1. To read:
+    a. https://stackoverflow.com/questions/1517582/what-is-the-difference-between-statically-typed-and-dynamically-typed-languages
+    b. https://stackoverflow.com/questions/17253545/scripting-language-vs-programming-language
+2. codekata practice
+3. Difference between HTTP1.1 vs HTTP2
