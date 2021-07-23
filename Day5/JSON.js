@@ -8,6 +8,7 @@ let technical_spec = {
             front:'1405 mm',
             rear: '1400 mm'
         },
+        
         minimumTurningRadius:'4.5 m',
         minimumGroundClearence: '170 mm'
     },
