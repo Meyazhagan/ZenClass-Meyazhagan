@@ -1,0 +1,29 @@
+{
+  "name": "Meyazhagan",
+  "dob": "20-may-1999",
+  "nationality": "India",
+  "contact": 8667283263,
+  "emailID": "meyazhagan.ofcl@gmail.com",
+  "education": {
+    "graduation": {
+      "collegeName": "PSG CAS",
+      "department": "electronics",
+      "year": "2016-2019",
+      "CGPA": 7.1
+    }
+  },
+  "projects": [
+    {
+      "title": "project 1",
+      "desc": "detailed explaination",
+      "startDate": "20-jul-2021",
+      "endDate": "24-jul-2021"
+    },
+    {
+      "title": "project 2",
+      "desc": "detailed explaination",
+      "startDate": "24-jul-2021",
+      "endDate": "28-jul-2021"
+    }
+  ]
+}
