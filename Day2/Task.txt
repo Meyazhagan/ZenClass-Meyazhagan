@@ -1,14 +1,42 @@
 1. List 5 difference between Browser JS(console) v Nodejs
+Browser JS(console):-
+    javascript is programming language that is used for writting scripts for website.
+    javascript can be only run in browser.
+    It is basically used on the client side.
+    javascript is capable to add HTML and DOM manipulation.
+    It is the upgraded version of ECMA script that uses Chrome’s V8 engine written in C++.
+Nodejs :-
+    NodeJS is javascript runtime environment.
+    NodeJS can be run outside the browser.
+    It is mostly used in server side.
+    Nodejs does not have capability to add HTML tags.
+    Nodejs is written in C, C++ and Javascript.
+
 2. watch & summary 5 points - https://www.youtube.com/watch?v=SmE4OwHztCc&ab_channel=JSConf
+    The HTML and CSS parse as render tree, then which can be placed in layout based on they absolute position,
+with this coordinates the website is painted on browser screen.
+    HTML is parsed with tokeniser, which will auto close the tags and tree constructer will construct DOM tree.
+script, link and style could halt JS execution.
+    CSS parser creates objects models (CSSOM) a representation of style sheet, rules, selectors decorations.
+    Next process is render/frame tree, it will combain two objects models, style resolutions. This is the actual 
+representation of website. There are multiple tree - render objects, render style, render layers, line boxes.
+    Layout is recursive process to traverse render tree, figuring nodes position and size and layouts its childerns.
+    Paint setup will take layed out render tree and creates layers, position nodes, transparency, overflow, canvas, etc.
+
 3. To read - https://stackoverflow.com/questions/5641997/is-it-necessary-to-write-head-body-and-html-tags
+
 4. Execute the below code and write your description in txt file
-    typeof(1)
-    typeof(1.1)
-    typeof('1.1')
-    typeof(true)
-    typeof(null)
-    typeof(undefined)
-    typeof([])
-    typeof({})
-    typeof(NaN)
-5. Read what is prototype
+    typeof(1) - number
+    typeof(1.1) - number
+    typeof('1.1') - string
+    typeof(true) - boolean
+    typeof(null) - object
+    typeof(undefined) - undefined
+    typeof([]) - object
+    typeof({}) - object
+    typeof(NaN) - number
+
+5. Read what is prototype?
+    Prototypes are the mechanism by which JavaScript objects inherit features from one another.
+    JavaScript is often described as a prototype-based language — to provide inheritance, objects 
+can have a prototype object, which acts as a template object that it inherits methods and properties from.
