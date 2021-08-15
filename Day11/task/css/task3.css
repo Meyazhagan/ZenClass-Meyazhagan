@@ -1,0 +1,79 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.2rem;
+  background: rgb(235, 227, 236);
+}
+
+label {
+  padding: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  gap: 1rem;
+  width: fit-content;
+  padding: 2rem;
+  background-color: white;
+  justify-content: center;
+  align-items: baseline;
+  border-radius: 5px;
+  justify-items: center;
+  box-shadow: 0 0 5px grey;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  width: 180px;
+  letter-spacing: 0.1rem;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  background-color: #f8f8f8;
+}
+
+textarea {
+  width: 200px;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  letter-spacing: 0.1rem;
+  resize: none;
+}
+
+input[type="text"]:focus {
+  border: none;
+  background-color: rgb(208, 232, 240);
+}
+
+input[type="reset"] {
+  background-color: lightblue;
+}
+
+input[type="submit"] {
+  background-color: lightgreen;
+}
+
+.btn {
+  padding: 0.5rem 3rem;
+  border-radius: 5px;
+  letter-spacing: 0.2rem;
+  border: 1px solid #ccc;
+}
