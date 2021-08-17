@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 8</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      a {
+        text-decoration: none;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        /* font-size: large; */
+      }
+      table,
+      th,
+      td {
+        border: 0.5px solid black;
+        border-collapse: collapse;
+        padding: 1rem;
+        font-weight: normal;
+        text-align: center;
+      }
+      caption {
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="btm-nav">
+      <a class="btm-nav-btn" href="task7.html">PREV</a>
+      <a class="btm-nav-btn" href="task10.html">NEXT</a>
+    </div>
+    <div class="container">
+      <p>
+        8. Use the table tag to design given image
+        <a
+          href="https://www.bapugraphics.com/assets/img/port_upload_dir/table-4.jpg"
+          target="_blank"
+          >Click here</a
+        >.
+      </p>
+      <table>
+        <caption>
+          Health Care
+        </caption>
+        <tr>
+          <th rowspan="2">State of Health</th>
+          <th colspan="2">Fasting Value</th>
+          <th>After Eating</th>
+        </tr>
+        <tr>
+          <th>Minimum</th>
+          <th>Maximum</th>
+          <th>2 hours After Eating</th>
+        </tr>
+        <tr>
+          <th>Healthy</th>
+          <td>70</td>
+          <td>100</td>
+          <td>Less than 140</td>
+        </tr>
+        <tr>
+          <th>Pre-Diabetes</th>
+          <td>101</td>
+          <td>126</td>
+          <td>140 to 200</td>
+        </tr>
+        <tr>
+          <th>Diabetes</th>
+          <td>More than 126</td>
+          <td>N/A</td>
+          <td>More than 200</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

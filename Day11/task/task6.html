@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 6</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      form {
+        padding: 10px 50px;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+      div * {
+        padding: 0.5rem;
+      }
+      input[type="submit"] {
+        border: 1px solid black;
+        padding: 0.5rem 1rem;
+        margin: 10px;
+        background-color: rgb(255, 255, 255);
+      }
+      input[type="submit"]:hover {
+        transform: scale(1.05);
+      }
+      fieldset {
+        width: max-content;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="btm-nav">
+      <a class="btm-nav-btn" href="task5.html">PREV</a>
+      <a class="btm-nav-btn" href="task7.html">NEXT</a>
+    </div>
+    <p>
+      6. In the form, add two radio buttons with grouping them for employee
+      type(Salaried and own business)
+    </p>
+    <form action="https://www.google.com">
+      <fieldset>
+        <legend>Grouped Ratio Buttons</legend>
+        <div>
+          Select employee type:
+          <label for="salaried"
+            ><input
+              type="radio"
+              name="employee type"
+              id="salaried"
+              value="salaried"
+            />
+            Salaried</label
+          >
+
+          <label for="business"
+            ><input
+              type="radio"
+              name="employee type"
+              id="business"
+              value="own business"
+            />
+            Own Business</label
+          >
+        </div>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

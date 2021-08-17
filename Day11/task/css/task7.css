@@ -1,7 +1,7 @@
-body {
+.body {
   letter-spacing: 0.2rem;
   display: flex;
-  height: 100vh;
+  /* height: 80vh; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -14,14 +14,16 @@ label {
 
 h3 {
   text-align: center;
-  margin-top: 0;
-  padding: 1rem;
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 2rem;
   background-color: red;
   color: white;
 }
 .container {
-  /* padding: 20px; */
-  border-radius: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  width: 700px;
   border: 4px solid black;
 }
 a {
@@ -41,13 +43,17 @@ form {
     "extra extra extra extra extra extra";
 }
 
-div {
+.container div {
   padding: 0.5rem;
 }
 
 input[type="text"] {
-  padding: 0.2rem;
+  font-family: "Style Script", cursive;
+  /* padding: 0rem; */
   letter-spacing: 0.05rem;
+  font-size: 1.8rem;
+  font-style: italic;
+  text-align: center;
   width: 100%;
   border: none;
   background-color: rgba(0, 0, 0, 0);

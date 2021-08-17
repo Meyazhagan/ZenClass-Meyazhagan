@@ -1,0 +1,34 @@
+<input type="text" placeholder="text" value="text" />
+<input type="password" placeholder="password" value="password" />
+<input type="url" placeholder="URL" value="https://www.google.com" />
+<input type="number" placeholder="number" value="123456" />
+<input type="email" placeholder="email" value="yourmailid@gmail.com" />
+<input type="search" placeholder="search" value="default" />
+<input type="tel" placeholder="phone number" />
+<input type="text" placeholder="required" required />
+<input type="date" />
+<input type="week" />
+<label for="">Hidden<input type="hidden" value="hidden" /></label>
+<input type="month" />
+<input type="file" value="hello" />
+<input type="color" />
+<input type="range" />
+<label for=""><input type="checkbox" value="checkbox" />checkbox</label>
+<label for=""><input type="radio" value="radio" />radio</label>
+<select>
+    <option value="option 1">option 1</option>
+    <option value="option 2">option 2</option>
+    <option value="option 3">option 3</option>
+    <option value="option 4">option 4</option>
+</select>
+<label for="">Select multiple options</label>
+<select multiple>
+    <option value="option 1">option 1</option>
+    <option value="option 2">option 2</option>
+    <option value="option 3">option 3</option>
+    <option value="option 4">option 4</option>
+</select>
+<textarea placeholder="textarea"></textarea>
+<input type="button" value="Button" />
+<input type="reset" value="Reset" />
+<input type="submit" value="Submit" />

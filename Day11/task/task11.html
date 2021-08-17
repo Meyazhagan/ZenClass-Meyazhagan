@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 11</title>
+
+    <style>
+      .form-elements {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        height: 120vh;
+        padding: 0 50px;
+        justify-content: space-between;
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="btm-nav">
+      <a class="btm-nav-btn" href="task10.html">PREV</a>
+      <a class="btm-nav-btn" href="/index.html">HOME</a>
+    </div>
+    <p>
+      11. Create an HTML page, which should contain all types of input elements.
+    </p>
+    <form action="https://www.google.com">
+      <div class="form-elements">
+        <input type="text" placeholder="text" />
+        <input type="password" placeholder="password" />
+        <input type="url" placeholder="URL" />
+        <input type="number" placeholder="number" />
+        <input type="email" placeholder="email" />
+        <input type="search" placeholder="search" />
+        <input type="tel" placeholder="phone number" />
+        <input type="text" placeholder="required" required />
+        <input type="date" />
+        <input type="week" />
+        <label for="">Hidden<input type="hidden" /></label>
+        <input type="month" />
+        <input type="file" />
+        <input type="color" />
+        <input type="range" />
+        <label for=""><input type="checkbox" value="checkbox" />checkbox</label>
+        <label for=""><input type="radio" value="radio" />radio</label>
+        <select>
+          <option value="option 1">option 1</option>
+          <option value="option 2">option 2</option>
+          <option value="option 3">option 3</option>
+          <option value="option 4">option 4</option>
+        </select>
+        <label for="">Select multiple options</label>
+        <select multiple>
+          <option value="option 1">option 1</option>
+          <option value="option 2">option 2</option>
+          <option value="option 3">option 3</option>
+          <option value="option 4">option 4</option>
+        </select>
+        <textarea placeholder="textarea"></textarea>
+        <input type="button" value="Button" />
+        <input type="reset" value="Reset" />
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>
