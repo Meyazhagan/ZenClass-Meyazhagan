@@ -25,23 +25,55 @@ console.log("c. Sum of all numbers in an array");
   console.log(sum);
 })(arr);
 console.log("d. Return all the prime numbers in an array");
-function primeNumber(max) {
-  var notPrimes = [],
-    i,
-    j,
-    primes = [];
-  for (i = 2; i <= max; ++i) {
-    if (!notPrimes[i]) {
-      primes.push(i);
-      for (j = i << 1; j <= max; j += i) {
-        notPrimes[j] = true;
+const isPrime = (n) => {
+  if (n === 1) {
+    return false;
+  } else if (n === 2) {
+    return true;
+  } else {
+    for (let x = 2; x < n; x++) {
+      if (n % x === 0) {
+        return false;
       }
     }
+    return true;
   }
-  return primes;
+};
+
+const primeNumbers = (arr) => {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (!isPrime(arr[i])) {
+      continue;
+    }
+    result.push(arr[i]);
+  }
+  return result;
+};
+console.log(primeNumbers([2, 3, 5, 4, 10, 9, 7, 11, 19, 20]));
+
+console.log("e. Return all the palindromes in an array");
+
+function isPalindrome(num) {
+  let str = "" + num;
+  let len = str.length;
+  for (let i = 0; i < +(len / 2, 10); i++) {
+    if (str[i] != str[len - 1 - i]) return false;
+  }
+  return true;
 }
-console.log(primeNumber(15).join(" "));
-//     e. Return all the palindromes in an array
+
+function isPalinArray(arr) {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    let ans = isPalindrome(arr[i]);
+    if (ans) result.push(arr[i]);
+  }
+  return result;
+}
+
+let palindromes = isPalinArray([121, 131, 20]);
+console.log(palindromes);
 
 console.log("f. Return median of two sorted arrays of same size");
 let arr1 = [1, 2, 3, 4, 5];
@@ -85,7 +117,7 @@ let removeDuplicate = function (arr) {
   for (let value of arr) {
     freq[value] = ++freq[value] || 1;
     if (freq[value] > 1) {
-      de;
+      continue;
     }
     console.log(value);
   }
